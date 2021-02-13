@@ -10,10 +10,10 @@ import kotlinx.android.parcel.Parcelize
  */
 
 @Parcelize
-data class Hero(
-    var name: String,
-    var description: String,
-    var photo: String
+data class GridHero(
+        var name: String,
+        var description: String,
+        var photo: String
 ) : VisitorUIModel(), Parcelable {
     override fun type(typeFactory: VisitorElement): Int {
         return typeFactory.type(this)
